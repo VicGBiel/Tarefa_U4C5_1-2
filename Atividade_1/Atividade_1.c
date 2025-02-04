@@ -30,6 +30,8 @@ bool repeating_timer_callback (struct repeating_timer *t){
         r_on = !r_on;
         gpio_put(r_led, r_on);
     }
+
+    return true;
 }
 
 //Função que inicializa os GPIOs, e acende o led vermelho 
