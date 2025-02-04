@@ -11,7 +11,7 @@ bool repeating_timer_callback (struct repeating_timer *t){
     bool y_on = gpio_get(y_led);
     bool g_on = gpio_get(g_led);
 
-    printf("PASSARAM-SE 3 SEGUNDOS");
+    printf("PASSARAM-SE 3 SEGUNDOS\n");
 
     if (r_on == 1){
         r_on = !r_on;
@@ -30,7 +30,6 @@ bool repeating_timer_callback (struct repeating_timer *t){
         r_on = !r_on;
         gpio_put(r_led, r_on);
     }
-
 }
 
 //Função que inicializa os GPIOs, e acende o led vermelho 
@@ -58,7 +57,7 @@ int main()
     add_repeating_timer_ms(3000, repeating_timer_callback, NULL, &timer);
 
     while (true) {
-        printf("ROTINA DE REPETICAO");
-        sleep_ms(10000);
+        sleep_ms(1000);
+        printf("ROTINA DE REPETICAO\n");
     }
 }
