@@ -79,5 +79,10 @@ O botão deve ser conectado ao **GP5**, com um resistor pull-up ativado no códi
 2. Importe a pasta "Atividade 2" através do **Pico SDK**.
 3. Repita o passo 4. da atividade 1.
 
+## **Observações**
+
+- O código é um exemplo básico para demonstrar o uso de GPIOs e temporizadores no Raspberry Pi Pico.
+- Na simulação do Wokwi integrado ao VS code, a cores vão ser idênticas ao esperado, porém, ao simular na BitDogLab, devido às especificações da atividade (3 leds diferentes) e a configuração da placa, as cores irão se combinar, ou seja, ao invés de: "verde, azul e vermelho" > "azul e vermelho" > "vermelho", as cores irão para: "branco" > "roxo" > "vermelho".
+
 ---
 Criado por Victor Gabriel Guimarães Lopes 
