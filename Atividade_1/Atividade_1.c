@@ -2,9 +2,9 @@
 #include "pico/stdlib.h"    //inclui a biblioteca padrão do Raspberry Pi Pico   
 #include "hardware/timer.h"    // Inclui a biblioteca para controle e uso de temporizadores de hardware
 
-#define r_led 11
+#define g_led 11
 #define y_led 12
-#define g_led 13
+#define r_led 13
 
 bool repeating_timer_callback (struct repeating_timer *t){
     bool r_on = gpio_get(r_led);

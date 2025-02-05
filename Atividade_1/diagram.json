@@ -15,14 +15,14 @@
         "id": "led1",
         "top": 15.6,
         "left": -255.4,
-        "attrs": { "color": "red" }
+        "attrs": { "color": "limegreen" }
       },
       {
         "type": "wokwi-led",
         "id": "led2",
         "top": 92.4,
         "left": -255.4,
-        "attrs": { "color": "limegreen" }
+        "attrs": { "color": "red" }
       },
       {
         "type": "wokwi-led",
